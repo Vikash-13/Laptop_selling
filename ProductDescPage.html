@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Description - Lapify</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            margin-bottom: 30px;
+        }
+        .card {
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #32363b;
+            color: #fff;
+            border-radius: 10px 10px 0 0;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        .footer {
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .product-description {
+            width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+        }
+        .product-image {
+            flex: 1;
+            margin-right: 50px;
+        }
+        .product-details {
+            flex: 1;
+            margin-left: 50px;
+            margin-top: 80px;
+        }
+        .product-details h2 {
+            margin-bottom: 20px;
+        }
+        .product-details .btn {
+            margin-right: 10px;
+        }
+        .specifications h3 {
+            margin-bottom: 20px;
+            font-weight: bold;
+            margin-left: 320px;
+        }
+        .specifications ul {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 320px;
+        }
+        .specifications li {
+            margin-bottom: 10px;
+            font-weight: bold;
+            /* margin-left: 50px; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="padding: 10px;">
+              <a class="navbar-brand" href="pract7.html">
+                <img src="/images/lp_logo.png" alt="LaptopGenius" width="30" height="24" style="border-radius: 50%;" >LaptopGenius
+              </a>
+              <form class="d-flex ms-auto" role="search">
+                <input class="form-control me-3 " type="search" placeholder="Search for product..." aria-label="Search">
+                <button class="btn btn-outline-success me-3" type="submit">Search</button>
+              </form>
+    
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                    <a class="nav-link " href="login.html">Login/Register</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link " href="#">Product</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link " href="category.html">Category</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">About Us</a>
+                  </li>
+                </ul> 
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="product-description">
+            <div class="product-image">
+                <img width="500px" src="/images/laptop2.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h2>Asus Vivobook 15</h2>
+                <p><strong>Brand:</strong> Asus</p>
+                <p><strong>Price:</strong> Rs. 34999</p>
+                <div>
+                    <button type="button" class="btn btn-primary">Buy</button>
+                    <button type="button" class="btn btn-secondary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="specifications">
+            <h3>Specifications</h3>
+            <ul>
+                <li>Processor: Intel Core i5</li>
+                <li>RAM: 8GB DDR4</li>
+                <li>Storage: 512GB SSD</li>
+                <li>Graphics: Integrated Intel UHD Graphics</li>
+                <li>Display: 15.6-inch Full HD</li>
+                <li>Operating System: Windows 10 Home</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column">
+                    <h1>Follow Us:</h1>
+                </div>
+                <div class="footer-column social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Lapify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-signup {
+            width: 20%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-signup:hover {
+            background-color: #0056b3;
+        }
+        .navbar {
+            margin-bottom: 30px;
+        }
+        .container1 {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .error-message {
+            color: red;
+            font-size: 12px;
+            position: absolute;
+            bottom: -20px; /* Adjust the distance of the error message from the input field */
+            left: 0;
+        }
+        
+    </style>
+</head>
+<body>
+   <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="padding: 10px;">
+          <a class="navbar-brand" href="pract7.html">
+            <img src="/images/lp_logo.png" alt="LaptopGenius" width="30" height="24" style="border-radius: 50%;" >LaptopGenius
+          </a>
+          <form class="d-flex ms-auto" role="search">
+            <input class="form-control me-3 " type="search" placeholder="Search for product..." aria-label="Search">
+            <button class="btn btn-outline-success me-3" type="submit">Search</button>
+          </form>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link " href="login.html">Login/Register</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="#">Product</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="category.html">Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">About Us</a>
+              </li>
+            </ul> 
+        </div>
+    </nav>
+</header>
+
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="registration-form" method="post">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                <div class="error-message" id="firstName-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                <div class="error-message" id="lastName-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="error-message" id="email-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+                <div class="error-message" id="password-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                <div class="error-message" id="confirmPassword-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-control" id="dob" name="dob" required>
+                <div class="error-message" id="dob-error"></div>
+            </div>
+            <button type="submit" class="btn btn-signup">Sign Up</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container1">
+            <div class="row">
+                <div class="footer-column">
+                    <h1>Follow Us:</h1>
+                </div>
+                <div class="footer-column social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/script1.js"></script>
+    <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
